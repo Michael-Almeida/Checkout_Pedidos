@@ -1,0 +1,45 @@
+.form-check {
+    border: solid rgb(207, 206, 206)
+}
+
+.botao {
+    text-align: right;
+}
+
+.informacao-valor {
+    text-align: center;
+    padding: 15px;
+}
+
+.forma-pagamento {
+    text-align: center;
+}
+
+.pagamento-cartao {
+    text-align: center;
+    border: solid gray;
+    padding-bottom: 10px;
+}
+
+.pagamento-cartao:hover {
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.5);
+    transition: 1s;
+}
+
+.pagamento-boleto {
+    text-align: center;
+    border: solid gray;
+}
+
+.pagamento-boleto:hover {
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.5);
+    transition: 1s;
+}
+
+.dados-cartao {
+    text-align: left;
+}
+
+.imagem {
+    width: 60%;
+}

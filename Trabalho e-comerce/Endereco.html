@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-commerce - Endereço</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./formatacao.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Cabeçalho -->
+        <div class="cabecalho">
+            <h1 class="display-5">Checkout de Pedidos - Dados de Entrega</h1>
+            <h6>
+                Para confirmar seu pedido preencha os dados de entrega abaixo, escolhendo uma forma de entrega
+            </h6>
+            <hr />
+        </div>
+
+        <!-- Div CEP -->
+        <div class="row mb-2">
+            <div class="col-md-4">
+                <label for="exampleInputEmail1" class="form-label">CEP</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o CEP" maxlength="8" />
+            </div>
+            <!-- Criando o botão no row -->
+            <div class="col-md-1">
+                <div class="mb-4 pb-2"></div>
+                <button type="button" class="btn btn-outline-secondary">
+          Buscar
+        </button>
+            </div>
+        </div>
+
+        <!-- Criando a 2º linha (Endereço, numero e complemento) -->
+        <div class="row mb-2">
+            <div class="col-md-6 mb-2">
+                <label for="exampleInputEmail1" class="form-label">Endereço</label>
+                <input maxlength="100" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex. Av. Cristiano Fischer" />
+            </div>
+            <!-- Número dentro do row -->
+            <div class="col-md-2 mb-2">
+                <label for="exampleInputEmail1" class="form-label">Número</label>
+                <input type="number" maxlength="4" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Número" maxlength="4" />
+            </div>
+            <!-- Complemento -->
+            <div class="col-md-4 mb-2">
+                <label for="exampleInputEmail1" class="form-label">Complemento</label>
+                <input type="text" maxlength="50" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Complemento" />
+            </div>
+        </div>
+
+        <!-- Criando a 3º linha (Bairro, Cidade, Estado, País)  -->
+        <!-- Bairro -->
+        <div class="row mb-2">
+            <div class="col-md-2 mb-2">
+                <label for="exampleInputEmail1" class="form-label">Bairro</label>
+                <input type="text" maxlength="50" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            </div>
+            <!-- Cidade dentro da row -->
+            <div class="col-md-4 mb-2">
+                <label for="exampleInputEmail1" class="form-label">Cidade</label>
+                <input type="text" maxlength="50" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            </div>
+            <!-- Estado dentro da row -->
+            <div class="col-md-2 mb-2">
+                <label for="Estado" class="form-label">Estado</label>
+                <select class="form-select" id="Estado">
+          <option selected="">Estado</option>
+          <option value="1">AC</option>
+          <option value="2">AL</option>
+          <option value="3">AP</option>
+          <option value="4">AM</option>
+          <option value="5">BA</option>
+          <option value="6">CE</option>
+          <option value="7">DF</option>
+          <option value="8">ES</option>
+          <option value="9">GO</option>
+          <option value="10">MA</option>
+          <option value="11">MT</option>
+          <option value="12">MS</option>
+          <option value="13">MG</option>
+          <option value="14">PA</option>
+          <option value="15">PB</option>
+          <option value="16">PR</option>
+          <option value="17">PE</option>
+          <option value="18">PI</option>
+          <option value="19">RJ</option>
+          <option value="20">RN</option>
+          <option value="21">RS</option>
+          <option value="22">RO</option>
+          <option value="23">RR</option>
+          <option value="24">SC</option>
+          <option value="25">SP</option>
+          <option value="26">SE</option>
+          <option value="27">TO</option>
+          <option value="17">"IN"</option>
+        </select>
+            </div>
+            <!-- País dentro da row -->
+            <div class="col-md-4">
+                <label for="exampleInputEmail1" class="form-label">País</label>
+                <input type="text" maxlength="50" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            </div>
+        </div>
+
+        <!-- Inserindo a forma de Entrega -->
+        <h4>Forma de Entrega</h4>
+
+        <!-- Forma Entrega 1 -->
+        <div class=" entrega row mb-2 ">
+            <div class="col-md-6 mb-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+            PAC - Entrega Comum
+            <p>
+            <h6>Pedido entregue em até 15 dias úteis - R$: 15,00</h6>
+            </p>
+            <p>Caso você não tenha muita pressa para receber o produto, essa opção é mais barata</p>
+            
+          </label>
+                </div>
+            </div>
+
+            <!-- Forma de Entrega 2-->
+            <div class="col-md-6 mb-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+            SEDEX - Entrega Rápida
+            <p>
+            <h6>Pedido entregue em até 5 dias úteis - R$: 25,00</h6>
+            </p>
+            <p>Quero receber meu produto o quanto antes e não me importo em pagar um pouco mais por isso</p>
+          </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botão para pagamento -->
+        <div class="botao col-md-12 pb-2">
+            <button type="button" class="btn btn-outline-secondary">
+        <a href="./Pagamento.html">Ir para o pagamento</button>
+        </div>
+    </div>
+</body>
+
+</html>
