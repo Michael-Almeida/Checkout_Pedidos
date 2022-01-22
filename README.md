@@ -1,4 +1,4 @@
-# pagina-E-commerce
+# Checkout Pedidos
 
 <h2>📋 Descrição</h2>
 <p>Primeiro projeto desenvolvido para Web simulando uma página de checkout de pedidos.</p>
